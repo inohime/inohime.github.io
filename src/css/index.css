@@ -1,0 +1,41 @@
+body {
+   background-color: aliceblue;
+   background: url("../../assets/img01.jpg")
+}
+
+.navBar {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
+
+.navBar #icon {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.navBar #icon img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: filter ease-out 0.15s;
+    filter: opacity(25%);
+    -webkit-transition: -webkit-filter ease-out 0.15s;
+    -webkit-filter:opacity(25%);
+}
+
+.navBar #icon img:hover {
+    transition: filter ease-in 0.15s;
+    filter: opacity(25%);
+    -webkit-transition: -webkit-filter ease-in 0.15s;
+    -webkit-filter:opacity(100%);
+    filter: none;
+}
+
+
